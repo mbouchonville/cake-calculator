@@ -10,20 +10,47 @@ if (!savedPrices) {
     function calculateIngredients() {
 
     //CAKE MIX
-        let cakeMixUsed = Number(savedPrices.cakeMixPrice);
+        let cakeMixPrice = Number(savedPrices.cakeMixPrice);
+
+        let cakeMixUsed = Number(document.getElementById("cakeMixUsed").value);
+
+        let cakeMixCost = cakeMixUsed * cakeMixPrice;
 
     //BUTTER
-        let butterUsed = Number(savedPrices.butterAmount);
+        let butterPrice = Number(savedPrices.butterPrice);
+
+        let butterAmount = Number(savedPrices.butterAmount);
+
+        let butterUsed = document.getElementById("butterUsed").value;
+
+        let butterCost = (butterUsed/butterAmount) * butterPrice;
 
     //MILK
-        let milkUsed = Number(savedPrices.milkAmount);
+        let milkPrice = Number(savedPrices.milkPrice);
+
+        let milkAmount = Number(savedPrices.milkAmount);
+
+        let milkUsed = Number(document.getElementById("milkUsed").value);
+
+        let milkCost = (milkUsed/milkAmount) * milkPrice;
 
     //EGGS
-        let eggsUsed = Number(savedPrices.eggAmount);
+        let eggPrice = Number(savedPrices.eggPrice);
+
+        let eggAmount = Number(savedPrices.eggAmount);
+
+        let eggsUsed = Number(document.getElementById("eggsUsed").value);
+
+        let eggCost = (eggsUsed/eggAmount) * eggPrice;
 
     //POWDERED SUGAR
-        let powderedSugarUsed = Number(savedPrices.powderedSugarAmount);
+        let powderedSugarPrice = Number(savedPrices.powderedSugarPrice);
 
+        let powderedSugarAmount = Number(savedPrices.powderedSugarAmount);
+        
+        let powderedSugarUsed = Number(document.getElementById("powderedSugarUsed").value);
+
+        let powderedSugarCost = (powderedSugarUsed/powderedSugarAmount) * powderedSugarPrice;
     //TOTAL
     let total =
         cakeMixCost +
