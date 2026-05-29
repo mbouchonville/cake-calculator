@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Cost Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cake Cost Calculator</h1>
+
+    <h2>Ingredient Costs</h2>
+
+<div class="ingredient-card">
+    <h3>Cake Mix:</h3>
+    <label>Boxes Used:</label>
+    <input type="number" id="cakeMixUsed" step="0.01">
+</div>
+
+<div class="ingredient-card">
+    <h3>Butter:</h3>
+    <label>Sticks Used:</label>
+    <input type="number" id="butterUsed" step="0.01">
+</div>
+
+<div class="ingredient-card">
+    <h3>Milk:</h3>
+    <label>Cups Used:</label>
+    <input type="number" id="milkUsed" step="0.01">
+    
+</div>
+
+<div class="ingredient-card">
+    <h3>Eggs:</h3>
+    <label>Eggs Used:</label>
+    <input type="number" id="eggsUsed" step="0.01">
+</div>
+
+<div class="ingredient-card">
+    <h3>Powdered Sugar:</h3>
+    <label>Cups Used:</label>
+    <input type="number" id="powderedSugarUsed" step="0.01">
+</div>
+
+<button onclick="calculateIngredients()">
+    Calculate Ingredients
+</button>
+
+<h3 id="ingredientTotal">
+    Ingredient Total: $0
+</h3>
+    <script src="calculator.js"></script>
+</body>
+</html>
