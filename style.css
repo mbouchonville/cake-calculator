@@ -1,13 +1,76 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
 body {
     font-family: Arial, sans-serif;
-    padding: 2rem;
-    background-color: #fff5f7;
 }
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================
+   INDEX.HTML
+========================= */
+
+.home-page h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #21B07E;
+}
+
+.home-page {
+    background-color: #D5F7EB;
+}
+
+.calculator-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.home-button {
+    text-decoration: none;
+    padding: 50px 40px;
+    font-size: 30px;
+    background-color: #21B07E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #76E5BE;
+    color: #21B07E;
+    transform: translateY(-3px);
+}
+
+.home-button:active {
+    transform: translateY(0);
+    background-color: #FFEDFE;
+    color: #FF5FF7;
+}
+
+
+/* =========================
+   CALCULATOR.HTML
+========================= */
 
 .ingredient-card {
-    background-color: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
+    border: 1px solid #ccc;
 }
 
+
+/* =========================
+   PRICES.HTML
+========================= */
+
+.ingredients-container {
+    max-width: 800px;
+}
