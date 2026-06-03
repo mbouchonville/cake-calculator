@@ -9,6 +9,30 @@ body {
 button {
     cursor: pointer;
 }
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #21B07E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #76E5BE;
+    color: #21B07E;
+    transform: translateY(-3px);
+}
+
+.back-button:active {
+    transform: translateY(0);
+    background-color: #FFEDFE;
+    color: #FF5FF7;
+}
 
 
 /* =========================
@@ -33,6 +57,7 @@ button {
 }
 
 .home-button {
+    
     text-decoration: none;
     padding: 50px 40px;
     font-size: 30px;
@@ -62,8 +87,41 @@ button {
    CALCULATOR.HTML
 ========================= */
 
+.calculator-page {
+    background-color: #D5F7EB;
+}
 .ingredient-card {
-    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+button {
+    text-decoration: none;
+    padding: 50px 100px;
+    font-size: 25px;
+    background-color: #21B07E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #76E5BE;
+    color: #21B07E;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+    background-color: #FFEDFE;
+    color: #FF5FF7;
 }
 
 
