@@ -4,8 +4,15 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #D5F7EB;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
 button {
     cursor: pointer;
 }
@@ -33,7 +40,6 @@ button {
     background-color: #FFEDFE;
     color: #FF5FF7;
 }
-
 
 /* =========================
    INDEX.HTML
@@ -131,4 +137,12 @@ button:active {
 
 .ingredients-container {
     max-width: 800px;
+}
+
+.input-group {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
