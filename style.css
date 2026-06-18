@@ -11,11 +11,12 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-
 }
+
 button {
     cursor: pointer;
 }
+
 .back-button {
     display: inline-block;
     margin-bottom: 20px;
@@ -25,7 +26,6 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-
     transition: all 0.3s ease;
 }
 
@@ -63,7 +63,6 @@ button {
 }
 
 .home-button {
-    
     text-decoration: none;
     padding: 50px 40px;
     font-size: 30px;
@@ -72,7 +71,6 @@ button {
     border: none;
     border-radius: 5px;
     text-align: center;
-
     transition: all 0.3s ease;
 }
 
@@ -88,7 +86,6 @@ button {
     color: #FF5FF7;
 }
 
-
 /* =========================
    CALCULATOR.HTML
 ========================= */
@@ -96,6 +93,7 @@ button {
 .calculator-page {
     background-color: #D5F7EB;
 }
+
 .ingredient-card {
     background-color: white;
     border-radius: 10px;
@@ -103,7 +101,6 @@ button {
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
 
 button {
     text-decoration: none;
@@ -114,7 +111,6 @@ button {
     border: none;
     border-radius: 5px;
     text-align: center;
-
     transition: all 0.3s ease;
 }
 
@@ -129,7 +125,6 @@ button:active {
     background-color: #FFEDFE;
     color: #FF5FF7;
 }
-
 
 /* =========================
    PRICES.HTML

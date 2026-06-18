@@ -7,21 +7,20 @@ saveButton.addEventListener("click", savePrices);
 function savePrices() {
 
     let prices = {
+    cakeMixPrice: document.getElementById("cakeMixPrice").value,
 
-        cakeMixPrice: document.getElementById("cakeMixPrice").value,
-        
-        butterPrice: document.getElementById("butterPrice").value,
-        butterAmount: document.getElementById("butterAmount").value,
+    butterPrice: document.getElementById("butterPrice").value,
+    butterAmount: document.getElementById("butterAmount").value,
 
-        milkPrice: document.getElementById("milkPrice").value,
-        milkAmount: document.getElementById("milkAmount").value,
+    milkPrice: document.getElementById("milkPrice").value,
+    milkAmount: document.getElementById("milkAmount").value,
 
-        eggPrice: document.getElementById("eggPrice").value,
-        eggAmount: document.getElementById("eggAmount").value,
+    eggPrice: document.getElementById("eggPrice").value,
+    eggAmount: document.getElementById("eggAmount").value,
 
-        powderedSugarPrice: document.getElementById("powderedSugarPrice").value,
-        powderedSugarAmount: document.getElementById("powderedSugarAmount").value
-    };
+    powderedSugarPrice: document.getElementById("powderedSugarPrice").value,
+    powderedSugarAmount: document.getElementById("powderedSugarAmount").value
+};
 
     localStorage.setItem("ingredientPrices", JSON.stringify(prices));
 

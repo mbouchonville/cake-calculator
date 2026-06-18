@@ -6,13 +6,16 @@ let savedPrices =
 if (!savedPrices) {
     alert("No saved prices found!");
 }
-
+// Helper function to get numeric value from input fields, defaulting to 0 if empty
+function getValue(id) {
+    return Number(document.getElementById(id).value) || 0;
+}
     function calculateIngredients() {
 
     //CAKE MIX
         let cakeMixPrice = Number(savedPrices.cakeMixPrice);
 
-        let cakeMixUsed = Number(document.getElementById("cakeMixUsed").value);
+        let cakeMixUsed = getValue("cakeMixUsed");
 
         let cakeMixCost = cakeMixUsed * cakeMixPrice;
 
@@ -21,7 +24,7 @@ if (!savedPrices) {
 
         let butterAmount = Number(savedPrices.butterAmount);
 
-        let butterUsed = document.getElementById("butterUsed").value;
+        let butterUsed = getValue("butterUsed");
 
         let butterCost = (butterUsed/butterAmount) * butterPrice;
 
@@ -30,7 +33,7 @@ if (!savedPrices) {
 
         let milkAmount = Number(savedPrices.milkAmount);
 
-        let milkUsed = Number(document.getElementById("milkUsed").value);
+        let milkUsed = getValue("milkUsed");
 
         let milkCost = (milkUsed/milkAmount) * milkPrice;
 
@@ -39,7 +42,7 @@ if (!savedPrices) {
 
         let eggAmount = Number(savedPrices.eggAmount);
 
-        let eggsUsed = Number(document.getElementById("eggsUsed").value);
+        let eggsUsed = getValue("eggsUsed");
 
         let eggCost = (eggsUsed/eggAmount) * eggPrice;
 
@@ -48,7 +51,7 @@ if (!savedPrices) {
 
         let powderedSugarAmount = Number(savedPrices.powderedSugarAmount);
         
-        let powderedSugarUsed = Number(document.getElementById("powderedSugarUsed").value);
+        let powderedSugarUsed = getValue("powderedSugarUsed");
 
         let powderedSugarCost = (powderedSugarUsed/powderedSugarAmount) * powderedSugarPrice;
     //TOTAL
